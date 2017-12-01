@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Get Outta Town!</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+    <!--Add Moment link-->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" ></script>
+
+  </head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">Anytime is Train Time</h1>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">Current Train Schedule</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency(mins)</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+              
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td>Silver Bullet</td>
+              <td>Las Vegas</td>
+              <td>30</td>
+              <td>cat face</td>
+              <td>30</td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Add Train</h3>
+        </div>
+        <div class="panel-body">
+
+        <form class="" action="index.html" method="post">
+          <div class="form-group">
+            <label for="usr">Train Name:</label>
+            <input type="text" class="form-control" id="name">
+            <label for="pwd">Destination:</label>
+            <input type="text" class="form-control" id="destination">
+            <label for="pwd">First Train Time (HH:MM- military time) :</label>
+            <input type="number" class="form-control" id="firstTrain">
+            <label for="pwd">Frequency(mins) :</label>
+            <input type="number" class="form-control" id="freq">
+          </div>
+          <button class="btn btn-primary" id="submit-button" type="submit">Submit</button>
+
+        </form>
+
+        </div>
+      </div>
+
+</div>
+    <script src="assets/action.js"></script>
+</body>
+</html>

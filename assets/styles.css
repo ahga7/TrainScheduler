@@ -1,0 +1,12 @@
+/*first train ran at 3am
+runs every 17 mins
+current time is 7:12pm
+how many mins away is the next train
+
+
+get the difference between the two times =16 hours
+convert the hours into minutes =972 mins
+divide the minutes by train run time which will give you the number of trains that have run within this time= 972/17= 57.176
+drop the 57 which gives you .176 * 17 which gives you 2.9999 minutes, so 17mins minus 3, will give you 14 mins till the next train*/
+
+
